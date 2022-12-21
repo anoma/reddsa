@@ -65,7 +65,8 @@ pub trait Binding: SigType {}
 /// A trait corresponding to `SpendAuthSig` in Zcash protocols.
 pub trait SpendAuth: SigType {}
 
-pub(crate) mod private {
+#[allow(missing_docs)]
+pub mod private {
     use super::*;
 
     pub trait SealedScalar {
